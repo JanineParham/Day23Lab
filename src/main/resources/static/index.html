@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <style>
+        body{background-color: teal;}
+        .column {
+            flex:50%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .row {
+            display: flex;
+            flew-wrap: wrap;
+            padding 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to my static webpage!</h1>
+    <h2>Here are some photos of my dogs... </h2>
+    <div class="row">
+        <div id="Sunshine" class="column">
+            <label for="Sunshine">Sunshine:</label>
+            <img src="Sunshine.jpeg">
+        </div>
+        <div class="column">
+            <label for="Stormy">Stormy:</label>
+            <img id="Stormy" src="Stormy.jpeg">
+        </div>
+    </div>
+
 </body>
 </html>
